@@ -20,10 +20,10 @@ def can_be_created_with_a_hash_of_attributes
       lead: "Paul Newman",
       in_theaters: false
   }
-  movie = Mo
+  movie = Movie.create(attributes)
 end
 
-def can_be_created_in_a_block(args = __)
+def can_be_created_in_a_block(args = )
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
